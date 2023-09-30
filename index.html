@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная</title>
 
-  <link href="./css/normalise81.css" rel="stylesheet">
-  <link href="index.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="dev/img/logo/Logo Files/For Web/Favicons/Browser.png" type="image/x-icon">
+    <title>Главная</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dev/css/normalise81.css">
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
-  <header>
-    logo
-    menu
-    кнопка подписки
-  </header>
-  <main>
-    плитки-карточки
-  </main>
-  <footer>
-    logo
-    menu
-    кнопка подписки
-    копирайт
-    наши имена
-    может еще телеграм тут
-  </footer>
+
+<body class="d-flex justify-content-center">
+    <div class="container-fluid d-flex flex-column justify-content-between overflow-hidden vh-100 p-0 m-0" style=" text-shadow:0 0 1em rgb(215, 255, 215), 0 0 0.2em rgb(112, 112, 112); background: center/ cover no-repeat url('dev/img/Girl_fox_Alice_oak_grove_The_title_of_the_book_is_written_in_large_golden_letters_and_is_located_on__149965133.png');">
+        <div class="d-flex justify-content-center bg-success bg-gradient bg-opacity-50">
+            <div class="btn opacity-75 bg-gradient text-light">кнопка авторизации / регистрации</div>
+        </div>
+        <footer>
+            <nav class="navbar d-flex justify-content-center fixed-bottom bg-success bg-gradient bg-opacity-50">
+				<a href="">
+					<img class="navbar-brand" src="dev/img/logo/Logo Files/For Web/png/Color logo - no background.png" alt="Alice" width="64">
+				</a>
+                <div class="navbar-nav">
+                    <div class="navbar-text row justify-content-center row-cols-auto text-light">
+                        <div class="btn opacity-75 bg-gradient text-light">menu</div>
+                        <div class="btn opacity-75 bg-gradient text-light">кнопка подписки</div>
+                        <div class="btn opacity-75 bg-gradient text-light">копирайт</div>
+                        <div class="btn opacity-75 bg-gradient text-light">наши имена</div>
+                        <div class="btn opacity-75 bg-gradient text-light">может еще телеграм</div>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    </div>
 </body>
+
 </html>
