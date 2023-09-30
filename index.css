@@ -16,5 +16,5 @@
   font-weight: 700;
 }
 
-@import './css/header.css';
-@import './css/footer.css';
+@import '.dev/css/header.css';
+@import '.dev/css/footer.css';
