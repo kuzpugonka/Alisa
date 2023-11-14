@@ -1,0 +1,65 @@
+.button {
+  box-sizing: border-box;
+  margin: 30px 0;
+  padding: 15px 35px;
+
+  font-family: inherit;
+  font-size: 24px;
+  color: var(--footer-text);
+
+  border-radius: 6px;
+  border: 2px solid var(--footer-text);
+
+  cursor: pointer;
+}
+
+.button_blue {
+  background-color: var(--hero);
+}
+
+.button:focus-visible {
+  border: 2px solid var(--footer-text);
+  outline: none;
+}
+
+.button:focus {
+  border: 2px solid var(--footer-text);
+  outline: none;
+}
+
+button span {
+  transition-property: font-size, transform;
+  transition-duration: 0.5s, 0.5s;
+  transition-delay: 0.5s, 0s;
+}
+
+button:before {
+  content: "Вперёд! U*ᴥ*U";
+  font-size: 0;
+  transition-property: font-size;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+}
+
+button:hover:before {
+  font-size: 18px;
+  transition-property: font-size;
+  transition-duration: 0.5s;
+  transition-delay: 0.5s;
+}
+
+button:hover span {
+  transform: scale(0);
+  font-size: 0;
+  transition-property: font-size, transform;
+  transition-duration: 0.5s, 0.5s;
+  transition-delay: 0.5s, 0s;
+}
+
+@media (max-width: 480px) {
+  .button_blue {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+

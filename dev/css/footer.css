@@ -1,0 +1,55 @@
+.footer {
+  background-color: var(--dark-green);
+}
+.footer__container {
+  color: var(--footer-text);
+
+  display: grid;
+  grid-template-columns: 150px 1fr 320px;
+  grid-template-areas:
+    "logo menu dev"
+    "btn . copyright";
+  gap: 50px;
+  align-items: center;
+}
+.footer__logo {
+  width: 150px;
+  grid-area: logo;
+}
+nav {
+  grid-area: menu;
+}
+.footer__nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.dev {
+  grid-area: dev;
+  padding: 5px;
+  font-size: 0.7rem;
+}
+.btn-paid-service {
+  grid-area: btn;
+}
+.copyright {
+  grid-area: copyright;
+  font-size: 0.7rem;
+}
+
+
+@media (max-width: 1140px) {
+}
+
+@media (max-width: 940px) {
+}
+
+@media (max-width: 640px) {
+  .footer__container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .dev {
+    text-align: center;
+  }
+}

@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff");
+  src: url("/dev/fonts/Roboto-Regular.woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "ringbear";
+  src: url("../fonts/ringbear_medium.woff");
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--light-green);
+
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 18px;
+ 
+  overflow-x: hidden;
+}
+
+.container {
+  --width: 1180px;
+  --padding: 30px;
+  max-width: calc(var(--width) + var(--padding) * 2);
+  margin: 0 auto;
+  padding: 0 var(--padding);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 10px 0;
+  color: var(--h1);
+}
+
+h1 {
+  font-family: "ringbear";
+  font-size: 4rem;
+}
+
+img,
+cvg {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (max-width: 1140px) {
+  .container {
+    --width: 880px;
+  }
+}
+
+@media (max-width: 940px) {
+  .container {
+    --width: 680px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    --padding: 15px;
+  }
+}

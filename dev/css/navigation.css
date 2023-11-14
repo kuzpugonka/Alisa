@@ -1,0 +1,13 @@
+.nav-bar {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  color: var(--h1);
+}
+
+.header__nav-link {
+  border-color: --nav-border;
+}

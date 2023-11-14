@@ -1,20 +1,8 @@
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.woff');  
-  font-weight: normal;
-}
+@import './dev/css/01_style.css';
+@import './dev/css/02_colors.css';
 
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Medium.woff');  
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Bold.woff');  
-  font-weight: 700;
-}
-
-@import '.dev/css/header.css';
-@import '.dev/css/footer.css';
+@import './dev/css/header.css';
+@import './dev/css/navigation.css';
+@import './dev/css/hero.css';
+@import './dev/css/button.css';
+@import './dev/css/footer.css';
