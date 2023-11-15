@@ -1,15 +1,15 @@
 .hero {
   width: 100%;
   padding: 80px 30px;
-
-  background-color: var(--hero);
+  /* возможно надо опустить bgc в hero_general */
+  background-color: var(--bg-header);
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
 }
 
 .hero_general {
-  background-image: url(../img/hero.png);
+  background-image: url(../img/hero-bg/hero.png);
 }
 
 .hero__container {
@@ -25,52 +25,90 @@
   padding: 0;
 
   font-family: "Roboto";
-  font-size: 4rem;
-  color: var(--footer-text);
-  text-shadow: 0.5px 0 0 var(--light-green), -1px 0 0 var(--light-green);
+  font-size: 3.5rem;
+  color: var(--h1);
+  text-shadow: 0.5px 0 0 #fff95600, -1px 0 0 #fffb85;
 }
 
 .hero__title_smoll {
   font-size: 2.5rem;
+  padding-bottom: 30px;
+}
+.offer {
+  color: var(--h1);
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-shadow: 0.5px 0 0 #fff95600, -1px 0 0 #fffb85;
+  width: 35%;
 }
 
 @media (max-width: 1140px) {
   .hero {
     padding: 70px 30px;
-  } 
+    background-color: var(--hero);
+  }
   .hero__title {
     width: 50%;
+  }
+
+  .offer {
+    width: 50%;
+    color: var(--nav-border);
+    font-weight: normal;
+    text-shadow: none;
   }
 }
 
 @media (max-width: 940px) {
   .hero {
-    padding: 70px 0px;
-  } 
+    padding: 30px 0px;
+  }
   .hero__title {
     width: 45%;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    padding-top: 50px;
   }
   .hero__title_smoll {
     font-size: 2rem;
+    padding-bottom: 60px;
+  }
+  .offer {
+    width: 70%;
+    
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .hero {
     padding: 70px 0px;
     background-size: cover;
-    background-position: bottom;
-  } 
+    background-position: top;
+  }
+  .hero__title {
+    padding-top: 40px;
+    font-size: 2.5rem;
+  }
+  .hero__title_smoll {
+    padding-bottom: 90px;
+  }
+  .offer {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
   .header__container {
     align-items: center;
   }
   .hero__title {
     width: 85%;
-
+    padding-top: 20px;
     font-size: 2.2rem;
   }
   .hero__title_smoll {
     font-size: 1.5rem;
+    padding-bottom: 70px;
+  }
+  .offer {
+    display: none;
   }
 }

@@ -2,9 +2,11 @@
   --light-green: #fff956;
   --dark-green: #2d801d;
   --footer-text: #feffb0;
-  --hero: #1a0f70;
+  /* --hero: #1a0f70;  */
+  --hero: #3b595bda; 
   --h1: #4a2400;
   --nav-border: #feffb0;
   --bg-header: #eac57fa9;
+  --bg-footer: #eac57fa9;
   --fox: #ff9b26;
 }

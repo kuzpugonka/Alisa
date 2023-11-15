@@ -55,6 +55,9 @@ body {
   margin: 0 auto;
   padding: 0 var(--padding);
 }
+main {
+  flex-grow: 1; /* прижимаем футер вниз если нет списка видео */
+}
 
 h1,
 h2,
@@ -108,6 +111,13 @@ ul {
 }
 
 @media (max-width: 640px) {
+  .container {
+    --width: 480px;
+    --padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
   .container {
     --padding: 15px;
   }
