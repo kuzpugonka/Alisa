@@ -40,10 +40,14 @@ body {
   font-family: "Roboto";
   font-weight: normal;
   font-size: 18px;
- 
+
   overflow-x: hidden;
 }
-
+.fon-general {
+  background-image: url(/dev/img/fon_general_page.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .container {
   --width: 1180px;
   --padding: 30px;

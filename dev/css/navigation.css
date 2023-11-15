@@ -9,5 +9,6 @@
 }
 
 .header__nav-link {
-  border-color: --nav-border;
+ 
+  font-size: 1rem;
 }
