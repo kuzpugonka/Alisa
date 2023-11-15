@@ -44,7 +44,7 @@ body {
   overflow-x: hidden;
 }
 .fon-general {
-  background-image: url(./dev/img/fon_general_page.jpg);
+  background-image: url("../img/fon_general_page.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
