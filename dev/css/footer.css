@@ -1,23 +1,22 @@
 .footer {
   background-color: var(--bg-footer);
-  display: none;
 }
 .footer__container {
-  color: var(--footer-text);
-
   display: grid;
-  grid-template-columns: 150px 1fr 320px;
+  grid-template-columns: 160px 1fr 280px;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "logo menu dev"
-    "btn . copyright";
-  gap: 50px;
+    "btn social copyright";
+  gap: 10px 50px;
   align-items: center;
 }
 .footer__logo {
   width: 150px;
   grid-area: logo;
+  padding: 5px;
 }
-nav {
+.footer__nav {
   grid-area: menu;
 }
 .footer__nav-bar {
@@ -26,31 +25,87 @@ nav {
 }
 .dev {
   grid-area: dev;
-  padding: 5px;
-  font-size: 0.7rem;
+  padding: 10px 5px 0;
+  font-size: 0.9rem;
+  color: var(--h1);
 }
-.btn-paid-service {
+.footer__btn-service {
   grid-area: btn;
+  padding: 0 10px;
+}
+.button_service {
+  margin: 0;
+  padding: 10px 25px;
+  font-size: 1rem;
+  color: var(--h1);
+  border: 2px solid var(--nav-border);
+}
+.social {
+  grid-area: social;
 }
 .copyright {
   grid-area: copyright;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+  padding-left: 2px;
 }
-
 
 @media (max-width: 1140px) {
 }
 
 @media (max-width: 940px) {
+  .footer__container {
+    grid-template-columns: 1fr 280px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "logo btn "
+      "menu dev"
+      "copyright social";
+    gap: 10px 20px;
+  }
+  .footer__logo {
+    width: 170px;
+    padding: 10px;
+  }
+  .dev {
+    padding-top: 0;
+    font-size: 0.9rem;
+  }
+  .copyright {
+    padding-left: 20px;
+  }
+  .footer__nav-bar {
+    flex-wrap: wrap;
+    gap: 5px 8px;
+  }
 }
 
 @media (max-width: 640px) {
   .footer__container {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "logo"
+      "menu"
+      "btn "
+      "dev"
+      "copyright"
+      "social";
+    gap: 5px;
+    justify-items: center;
+  }
+  .footer__logo {
+    width: 150px;
+    padding: 5px 0 0 0;
+  }
+  .footer__nav-bar {
+    font-size: 0.9rem;
+    margin: 0 0 20px;
   }
   .dev {
+    padding: 20px 0 0;
     text-align: center;
   }
+}
+
+@media (max-width: 480px) {
 }
