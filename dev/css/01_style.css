@@ -33,6 +33,7 @@ html {
   box-sizing: inherit;
 }
 body {
+  position: relative;
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--light-green);
