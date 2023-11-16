@@ -27,13 +27,13 @@
   outline: none;
 }
 
-button span {
+.button span {
   transition-property: font-size, transform;
   transition-duration: 0.5s, 0.5s;
   transition-delay: 0.5s, 0s;
 }
 
-button:before {
+.button:before {
   content: "Вперёд! U*ᴥ*U";
   font-size: 0;
   transition-property: font-size;
@@ -41,14 +41,14 @@ button:before {
   transition-delay: 0s;
 }
 
-button:hover:before {
+.button:hover:before {
   font-size: 18px;
   transition-property: font-size;
   transition-duration: 0.5s;
   transition-delay: 0.5s;
 }
 
-button:hover span {
+.button:hover span {
   transform: scale(0);
   font-size: 0;
   transition-property: font-size, transform;
@@ -58,8 +58,8 @@ button:hover span {
 
 @media (max-width: 480px) {
   .button_blue {
-    font-size: 18px;
-    text-align: center;
+    font-size: 1rem;
+    margin: 0 10% 0 0;
+    padding: 10px 25px;
   }
 }
-

@@ -47,4 +47,8 @@
   }
 }
 @media (max-width: 480px) {
+ 
+  .header__btn {
+    margin-right: 30px;
+  }
 }
