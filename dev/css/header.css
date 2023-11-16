@@ -12,7 +12,7 @@
   padding-top: 9px;
 }
 
-.button_service {
+.button_login {
   margin: 0;
   padding: 10px 35px;
   font-size: 1rem;
@@ -33,17 +33,15 @@
     width: 120px;
     padding-top: 5px;
   }
-  .nav {
+  .header__nav {
     display: none;
   }
   .header__btn {
     margin-right: 15px;
   }
-  .button_service {
-    margin: 0;
+  .button_login {
     padding: 5px 15px;
     font-size: 0.8rem;
-    border: 2px solid var(--footer-text);
   }
 }
 @media (max-width: 480px) {

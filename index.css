@@ -1,8 +1,8 @@
-@import './dev/css/01_style.css';
-@import './dev/css/02_colors.css';
+@import "./dev/css/01_style.css";
+@import "./dev/css/02_colors.css";
 
-@import './dev/css/header.css';
-@import './dev/css/navigation.css';
-@import './dev/css/hero.css';
-@import './dev/css/button.css';
-@import './dev/css/footer.css';
+@import "./dev/css/header.css";
+@import "./dev/css/navigation.css";
+@import "./dev/css/hero.css";
+@import "./dev/css/hero-button.css";
+@import "./dev/css/footer.css";
