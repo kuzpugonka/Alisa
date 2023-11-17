@@ -1,7 +1,6 @@
 .page_404 {
   padding: 40px 0;
   background: #fff;
-  font-family: "Arvo", serif;
 }
 
 .page_404 img {
@@ -28,6 +27,7 @@
   background: #39ac31;
   margin: 20px 0;
   display: inline-block;
+  text-decoration: none;  /* добавила */
 }
 .contant_box_404 {
   margin-top: -50px;

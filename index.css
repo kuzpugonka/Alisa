@@ -6,3 +6,5 @@
 @import "./dev/css/hero.css";
 @import "./dev/css/hero-button.css";
 @import "./dev/css/footer.css";
+
+@import "./dev/css/404.css"; /* Добавила */
